@@ -44,6 +44,8 @@ foreach ($campers as $camper){
 
 // get the today date
  //$current_date = date("d-m-Y");
+ $current_date = date("l jS \of F Y h:i:s A");
+ var_dump($current_date).'<br />';
  var_dump($camper['camper_reg_date']);
  exit;
 
