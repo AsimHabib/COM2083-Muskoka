@@ -18,7 +18,8 @@ $signout_status = null;
 $camper_first_name =null;
 $camper_last_name =null;
 $current_date = null;
-$date_only2;
+$date_only= null;
+$date_only2= null;
 
 //i	f we do, store in a variable
 $camper_id = $_GET['camper_id'];
@@ -50,6 +51,7 @@ $sql2 = "SELECT * FROM tbl_camp WHERE camp_reg_date = CURDATE() ";
 $cmd = $conn -> prepare($sql2);
 $cmd->execute();
 $dates= $cmd -> fetchAll();
+$count_camp = $cmd->rowCount();
 foreach ($dates as $date){
 $camp_date = strtotime($date['camp_reg_date']);
 $date_only = date("d-m-Y",$camp_date);
@@ -122,7 +124,11 @@ $signout_time = date("H:i A", $signout_time);
 				<div class="col-md-12 input-form border">
 					<form method="post" action="parent-time.php">						
 						<?php 
-						if($date_only == $current_date && $camper_reg_date == $current_date){
+						if($date_only != $current_date ){
+							echo '<h4>No camp date is not avaibale</h4>';
+							exit;
+						}
+						else if($date_only == $current_date && $camper_reg_date == $current_date){
 						if(empty($parent_signin_name) && $signin_status==0){
 							echo '
 							<label for="parent_signin_name">Sign In:</label>
