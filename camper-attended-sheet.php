@@ -21,6 +21,7 @@ require('header-staff.php');
     $cmd -> bindParam(':camp_reg_date', $camp_reg_date, PDO::PARAM_INT);
     $cmd->execute();
     $campers = $cmd -> fetchAll();
+	$count = $cmd->rowCount();
 ?>
 
 <div class="container-fluid">
@@ -53,9 +54,14 @@ require('header-staff.php');
 					<ul>
 						<?php
 	//output data to the user, Using HTML markup and  a loop
-	foreach ($campers as $camper)
+	if($count != 0 ){
+	foreach ($campers as $camper){
 	
 		echo '<li> <a href="#">' . $camper['camper_first_name'] . ' ' . $camper['camper_last_name'] . ' </a></li>';
+	}
+	} else {
+				echo 'Now Record Found';
+			}
 	
 	
 	//disconect
