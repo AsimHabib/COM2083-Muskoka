@@ -38,16 +38,16 @@ foreach ($campers as $camper){
 	$camper_last_name = $camper['camper_last_name'];	
 	$camper_reg_date = strtotime($camper['camper_reg_date']);
 	$camper_reg_date = date("d-m-Y",$camper_reg_date);
-	
-	
+	// echo $camper_reg_date;
+	// exit;	
 }
 
 // get the today date
- //$current_date = date("d-m-Y");
- $current_date = date("l jS \of F Y h:i:s A");
- var_dump($current_date).'<br />';
- var_dump($camper['camper_reg_date']);
- exit;
+ $current_date = date("d-m-Y");
+//  $current_date = date("l jS \of F Y h:i:s A");
+//  var_dump($current_date).'<br />';
+//  var_dump($camper['camper_reg_date']);
+//  exit;
 
 
 // camp date info
