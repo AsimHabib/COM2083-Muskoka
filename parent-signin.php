@@ -43,10 +43,10 @@ foreach ($campers as $camper){
 }
 
 // get the today date
- $current_date = date("d-m-Y");
- var_dump($current_date);
+ //$current_date = date("d-m-Y");
+ var_dump($camper['camper_reg_date']);
  exit;
- 
+
 
 // camp date info
 //$sql2 = "SELECT DATE_FORMAT(camp_reg_date, %Y-%m-%d) FROM tbl_camp  ";
