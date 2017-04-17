@@ -31,7 +31,9 @@ require('header-staff.php');
 		foreach ($campers as $camper){
 			$camper_first_name = $camper['camper_first_name'];
 			$camper_last_name = $camper['camper_last_name'];
-			$camper_image = $camper['camper_image'];		
+			$camper_image = $camper['camper_image'];
+			$camper_phone = $camper['phone_number'];
+			$phone_number = "(".substr($camper_phone,0,3).") ".substr($camper_phone,3,3)."-".substr($camper_phone,6);		
 		}
 	}
 
@@ -79,7 +81,7 @@ require('header-staff.php');
 		echo  '<span>Last Name: </span>' . $camper['camper_last_name'].'<br>';
 		echo  '<span>Rate: </span>$' . $camper['camper_rate'].'<br>';
 		//echo  '<span>Registered Date: </span>' . $camper['camper_reg_date'].'<br>';
-		echo  '<span>Phone Number: </span>' . $camper['phone_number'].'<br>';
+		echo  '<span>Phone Number: </span><a href="tel:'.$phone_number.'">'. $phone_number.'</a><br>';
 		echo  '<span>Parent Name: </span>' . $camper['parent_name'].'<br>';
 		echo  '<span>Email Address: </span>' . $camper['parent_email'].'<br>';
 		echo  '<span>Important Notes: </span>' . $camper['campers_notes'].'<br><br>
