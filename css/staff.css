@@ -1,0 +1,234 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #fff;
+	color: #383d43;
+}
+.row.light-blue {
+	background-color: #e9eff5;
+	border-bottom: solid 1px #e5e5e5;
+	margin-bottom: 30px;
+}
+.row.light-blue h1 {
+	font-size: 24px;
+	margin: 20px 15px;
+	font-weight: 600;
+}
+.navigation ul li#current {
+    background-color: #124c7f;
+}
+.light-blue input[type=text] {
+	width: 350px;
+	box-sizing: border-box;
+	border-radius: 4px;
+	font-size: 14px;
+	border: 0px;
+	background-color: #fff;
+	background-position: 10px 10px;
+	background-repeat: no-repeat;
+	padding: 12px 20px 12px 40px;
+	-webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
+	color: #383d43;
+	margin-right: 40px;
+}
+.light-blue form {
+	margin: 10px 0px;
+	position: relative;
+	    text-align: right;
+}
+.light-blue i {
+	position: absolute;
+	top: 14px;
+	    right: 362px;
+	color: #1a5e9a;
+}
+.content .profile form {
+    width: 54%;
+}
+
+.content .profile form label {
+    display: block;
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.content .profile form .form-group {
+    float: left;
+    width: 48%;
+    margin: 0px 10px 0 0px;
+}
+.content .border {
+    border-top: solid 1px #ddd;
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+.row.white-bg.content {
+    padding: 0px 20px;
+}
+.content .profile form input {
+    width: 100%;
+    padding: 10px;
+    margin: 0px;
+    border-radius: 3px;
+    border: solid 1px #ccc;
+}
+.content .profile form select {
+    width: 100%;
+
+    margin: 0px;
+    border-radius: 3px;
+    border: solid 1px #ccc;
+	    height: 42px;
+}
+.profile form textarea {
+        width: 100%;
+    border: solid 1px #ccc;
+    border-radius: 3px;
+	    padding: 15px;
+}
+.content .profile form .form-group.notes {
+    width: 98%;
+}
+.profile form button {
+	float:left;
+}
+a.red-btn{
+	  background-color: #ce3045;
+    color: #fff;
+    padding: 8px 20px;
+    border: 0px;
+    border-radius: 3px;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 20px 5px 0 0;
+	text-decoration:none;
+}
+a.grey-btn {
+    background-color: #a1a1a1;
+    color: #fff;
+    padding: 8px 20px;
+    border: 0px;
+    border-radius: 3px;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 20px 5px 40px 0;
+	text-decoration:none;
+}
+button.red-btn {
+    background-color: #ce3045;
+    color: #fff;
+    padding: 8px 20px;
+    border: 0px;
+    border-radius: 3px;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 20px 5px 0 0;
+}
+button.grey-btn {
+    background-color: #a1a1a1;
+    color: #fff;
+    padding: 8px 20px;
+    border: 0px;
+    border-radius: 3px;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 20px 5px 40px 0;
+}
+.content .button {
+    text-align: right;
+}
+
+.content .button a {
+    background-color: #ce3045;
+    color: #fff;
+    padding: 17px 18px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-right: 25px;
+	text-decoration:none;
+}
+.content .button a:hover {
+	background-color: #ba2337;
+	transition:ease 0.2s;
+}
+a.btn.btn-sm.btn-danger.delete {
+    margin-left: -56px;
+    margin-right: 30px;
+}
+.camper-info span {
+    font-weight: 600;
+    line-height: 34px;
+	padding-right: 3px;
+}
+
+.profile img {
+    border: solid 1px #ccc;
+    padding: 20px;
+    width: 100%;
+    background-color: #eee;
+	    margin: 12px 0px;
+}
+.camper-info {
+    font-size: 16px;
+}
+
+/*PAYMENT*/
+.rates span {
+    color: #1a5e9a;
+}
+table.pm-table {
+    border: 2px solid #f0f0f0;
+    margin-top: 15px;
+}
+
+#pay_now .container {
+    width: 90%;
+}
+#pay_now .container .col-2,
+#pay_now .container .col-10 {
+    display: inline-block;
+}
+#pay_now .container .col-2 {
+    width: 20%;
+}
+#pay_now .container .col-10 {
+    width: 79%;
+}
+#pay_now .modal-dialog .modal-content .modal_header,
+#pay_now .modal_footer {
+    padding: 15px 35px;
+}
+.report a {
+    BACKGROUND-COLOR: #e9eff5;
+    padding: 60px 20px;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+	    margin-bottom: 20px;
+}
+.report a:hover {
+	transition:ease 0.2s;
+	color:#fff;
+	background-color:#1a5e9a;
+}
+.report a:hover i {
+		color:#fff;
+		transition:ease 0.2s;
+
+}
+.report a i {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 50px;
+    color: #1a5e9a;
+}
+.table th {
+    padding-left: 0px !important;
+}
